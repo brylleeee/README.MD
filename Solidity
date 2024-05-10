@@ -3,8 +3,8 @@ pragma solidity ^0.8.18;
 
 contract Solidity {
 
-  string public name = "PhilToken";
-  string public symbol = "PHT";
+  string public name = "OrphicCoin";
+  string public symbol = "ORPH";
   uint public totalSupply = 0;
 
   mapping(address => uint) public balances;
