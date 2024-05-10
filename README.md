@@ -24,6 +24,5 @@ burn(address account, uint amount): This function destroys a specified amount of
 
 ## Authors
 
-Contributors names and contact info
-
-ex. Jerome Brylle M. Melgarejo
+Jerome Brylle M. Melgarejo
+8202260@ntc.edu.ph
