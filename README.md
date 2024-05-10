@@ -6,35 +6,24 @@ This Solidity project implements a basic token with minting and burning function
 
 SimpleCoin allows users to mint and burn a custom token. It includes features to track the total supply and individual balances.
 
-## Getting Started
+### Public Variables
 
-### Installing
+name: String variable storing the token name (e.g., "SimpleCoin").
+symbol: String variable storing the token abbreviation (e.g., "SC").
+totalSupply: Public variable of type uint representing the total number of tokens in circulation.
 
-* How/where to download your program
-* Any modifications needed to be made to files/folders
+### Mappings
 
-### Executing program
+balances: Mapping that stores the balance of each address (address => uint).
 
-* How to run the program
-* Step-by-step bullets
-```
-code blocks for commands
-```
+### Functions
 
-## Help
+mint(address recipient, uint amount): This function mints a specified amount of tokens and assigns them to the recipient address. It increases both the totalSupply and the balance of the recipient by the amount.
 
-Any advise for common problems or issues.
-```
-command to run if program contains helper info
-```
+burn(address account, uint amount): This function destroys a specified amount of tokens held by the account address. It reduces both the totalSupply and the balance of the account by the amount. However, it includes a conditional check to ensure the account has sufficient balance before burning.
 
 ## Authors
 
 Contributors names and contact info
 
 ex. Jerome Brylle M. Melgarejo
-
-
-## License
-
-This project is licensed under Jerome Brylle M. Melgarejo License - see the LICENSE.md file for details
